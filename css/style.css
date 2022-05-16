@@ -7,12 +7,20 @@
 .container {
   width: 80%;
   padding: 1%;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
+button {
+  background-color: greenyellow;
+  padding: 6px;
+  border-radius: 10%;
+  margin-top: 2%;
+}
+
+h2,
 h3 {
   text-align: center;
+  margin-bottom: 2%;
 }
 
 a {
@@ -31,7 +39,6 @@ a:hover {
 
 #logo {
   width: 10%;
-  /* border: 1px solid black; */
 }
 
 #logo img {
@@ -43,7 +50,7 @@ nav {
   justify-content: space-between;
 }
 
-ul{
+ul {
   list-style-type: none;
   display: flex;
 }
@@ -65,11 +72,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
-
-#search input[type = search] {
+#search input[type="search"] {
   width: 25%;
   padding: 1% 6px;
   border: none;
@@ -77,12 +82,12 @@ form {
   font-size: medium;
 }
 
-#search input[type = submit] {
+#search input[type="submit"] {
   padding: 8px;
   width: 13.5%;
   border: none;
   border-radius: 3px;
-  margin-top: 12px;
+  margin-left: 12px;
   font-size: medium;
   background-color: greenyellow;
   cursor: pointer;
@@ -113,3 +118,151 @@ form {
   color: white;
 }
 
+#foods {
+  background-color: #e0dede;
+  padding: 4% 0;
+  height: 100%;
+}
+
+#food {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#food img {
+  width: 20%;
+  height: 20%;
+  border-radius: 5%;
+}
+
+.food-menu {
+  margin: 2%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 15px;
+  width: 40%;
+}
+
+.food-menus {
+  display: flex;
+}
+
+.desc {
+  margin: 0 5%;
+}
+
+button a:hover {
+  font-weight: 900;
+  font-size: small;
+  color: black;
+}
+
+.price {
+  padding: 2% 0;
+  font-weight: bold;
+}
+
+.food-desc {
+  padding-bottom: 2% 0;
+}
+
+.media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media li {
+  padding: 0 18px;
+}
+
+.media img {
+  width: 70%;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo {
+    width: 80%;
+  }
+
+  #logo img {
+    width: 80%;
+  }
+
+  #search {
+    padding: 10% 0;
+    margin: 10% auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #search input[type="search"] {
+    width: 95%;
+    padding: 6px;
+  }
+
+  #search input[type="submit"] {
+    width: 90%;
+    text-align: center;
+    padding: 4px;
+    margin-top: 12px;
+    margin-right: 3%;
+  }
+
+  #boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2 {
+    margin-bottom: 10%;
+  }
+
+  .food-menu {
+    width: 100%;
+  }
+
+  .food-menus {
+    width: 100%;
+  }
+
+  #food {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #food img {
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+  button {
+    margin-left: 14px;
+    border-radius: 10px;
+  }
+
+  .media {
+    padding: 12px;
+  }
+}
