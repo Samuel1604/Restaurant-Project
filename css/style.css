@@ -1,268 +1,259 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.container {
-  width: 80%;
-  padding: 1%;
-  margin: 0 auto;
-}
-
-button {
-  background-color: greenyellow;
-  padding: 6px;
-  border-radius: 10%;
-  margin-top: 2%;
-}
-
-h2,
-h3 {
-  text-align: center;
-  margin-bottom: 2%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  opacity: 80%;
-  font-weight: 700;
-}
-
-a:hover {
-  opacity: 100%;
-  font-weight: bolder;
-  font-size: large;
-  color: crimson;
-}
-
-#logo {
-  width: 10%;
-}
-
-#logo img {
-  width: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-}
-
-ul li {
-  padding: 12px;
-}
-
-#search {
-  background-image: url(/images/bg.jpg);
-  padding: 5%;
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#search input[type="search"] {
-  width: 25%;
-  padding: 1% 6px;
-  border: none;
-  border-radius: 3px;
-  font-size: medium;
-}
-
-#search input[type="submit"] {
-  padding: 8px;
-  width: 13.5%;
-  border: none;
-  border-radius: 3px;
-  margin-left: 12px;
-  font-size: medium;
-  background-color: greenyellow;
-  cursor: pointer;
-}
-
-#categories {
-  padding: 4%;
-}
-
-#categories .container {
-  padding: 2%;
-}
-
-#categories img {
-  border-radius: 3%;
-  width: 95%;
-}
-
-#boxs {
-  display: flex;
-  justify-content: space-between;
-  padding: 2% 0 2% 0;
-}
-
-.box-text {
-  position: relative;
-  bottom: 15%;
-  color: white;
-}
-
-#foods {
-  background-color: #e0dede;
-  padding: 4% 0;
-  height: 100%;
-}
-
-#food {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#food img {
-  width: 20%;
-  height: 20%;
-  border-radius: 5%;
-}
-
-.food-menu {
-  margin: 2%;
-  padding: 2%;
-  background-color: white;
-  border-radius: 15px;
-  width: 40%;
-}
-
-.food-menus {
-  display: flex;
-}
-
-.desc {
-  margin: 0 5%;
-}
-
-button a:hover {
-  font-weight: 900;
-  font-size: small;
-  color: black;
-}
-
-.price {
-  padding: 2% 0;
-  font-weight: bold;
-}
-
-.food-desc {
-  padding-bottom: 2% 0;
-}
-
-.media ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.media li {
-  padding: 0 18px;
-}
-
-.media img {
-  width: 70%;
-}
-
-footer {
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #logo {
+.container{
     width: 80%;
-  }
-
-  #logo img {
-    width: 80%;
-  }
-
-  #search {
-    padding: 10% 0;
-    margin: 10% auto;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  #search input[type="search"] {
-    width: 95%;
-    padding: 6px;
-  }
-
-  #search input[type="submit"] {
-    width: 90%;
-    text-align: center;
-    padding: 4px;
-    margin-top: 12px;
-    margin-right: 3%;
-  }
-
-  #boxs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  h2 {
-    margin-bottom: 10%;
-  }
-
-  .food-menu {
-    width: 100%;
-  }
-
-  .food-menus {
-    width: 100%;
-  }
-
-  #food {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #food img {
     margin: 0 auto;
-    border-radius: 10px;
-    margin-top: 8px;
-  }
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
 
-  button {
-    margin-left: 14px;
-    border-radius: 10px;
-  }
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
 
-  .media {
-    padding: 12px;
-  }
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
 }
