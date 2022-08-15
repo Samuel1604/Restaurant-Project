@@ -1,0 +1,140 @@
+/* 
+    Author: Samuel Ayokanmi;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for All */
+* {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* CSS for menu */
+.menu {
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 1%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #ff6b81;
+}
+
+.menu ul li a:hover {
+  color: #ff4757;
+}
+
+/* CSS for main */
+.main {
+  background: #f1f2f6;
+  padding: 4%;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  width: 20%;
+  margin: 1%;
+  padding: 2%;
+  background: white;
+  text-align: center;
+}
+
+/* CSS for footer */
+.footer {
+  background: #ff4757;
+  text-align: center;
+  color: white;
+}
+
+/* CSS for table */
+.tbl {
+  width: 100%;
+}
+
+.tbl1 {
+  width: 30%;
+}
+
+table tr th {
+  padding: 1%;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+table tr td {
+  padding: 1%;
+}
+
+/* CSS for buttons */
+.btn-primary {
+  background-color: #70a1ff;
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e90ff;
+}
+
+.btn-secondary {
+  background-color: #74db94;
+  padding: 1%;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.btn-secondary:hover {
+ background-color: #2ed573;
+}
+
+.btn-danger {
+  background-color: #ff6b81;
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-danger:hover {
+ background-color: #ff4757;
+}
+
+.success{
+  color: #2ed573;
+}
+
+.error{
+  color: #ff4757;
+}
+
+/* CSS for Login Page */
+.login{
+  border: 1px solid gray;
+  width: 20%;
+  margin: 10% auto;
+  padding: 4%;
+}
